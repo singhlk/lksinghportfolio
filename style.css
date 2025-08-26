@@ -592,6 +592,8 @@ h2::after {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .contact-item a:hover {
@@ -684,5 +686,22 @@ h2::after {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .contact-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-item i {
+        font-size: 1.5rem;
+        margin-right: 15px;
+        width: 30px;
+        flex-shrink: 0;
+    }
+    
+    .contact-item a {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }
