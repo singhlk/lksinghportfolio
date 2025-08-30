@@ -274,6 +274,94 @@ h2::after {
     opacity: 0.9;
 }
 
+.education {
+    margin: 40px 0;
+}
+
+.college-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.college-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+}
+
+.college-details h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3;
+}
+
+.college-details p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.career-goal {
+    margin: 40px 0;
+}
+
+.goal-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+}
+
+.goal-card i {
+    font-size: 3rem;
+    color: #4ecdc4;
+    flex-shrink: 0;
+}
+
+.goal-content h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #4ecdc4;
+}
+
+.goal-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.95;
+}
+
+.goal-content strong {
+    color: #ffffff;
+    font-weight: 700;
+    background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -723,5 +811,40 @@ h2::after {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
+    }
+    
+    .college-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px;
+    }
+    
+    .college-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .college-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    .goal-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 25px;
+    }
+    
+    .goal-card i {
+        font-size: 2.5rem;
+    }
+    
+    .goal-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .goal-content p {
+        font-size: 1rem;
     }
 }
